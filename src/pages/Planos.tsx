@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 
 const Planos = () => {
@@ -81,13 +82,15 @@ const Planos = () => {
               </CardContent>
               
               <CardFooter className="pt-6">
-                <Button 
-                  className="w-full" 
-                  size="lg"
-                  variant={plan.highlighted ? "default" : "outline"}
-                >
-                  Assinar Agora
-                </Button>
+                <Link to="/auth" className="w-full">
+                  <Button 
+                    className="w-full" 
+                    size="lg"
+                    variant={plan.highlighted ? "default" : "outline"}
+                  >
+                    Assinar Agora
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}
