@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Palette, Play, Trophy } from "lucide-react";
+import { Check, Palette, Play, Trophy, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import heroImage from "@/assets/hero-art.jpg";
@@ -96,6 +96,30 @@ const Home = () => {
           </Card>
         </div>
       </section>
+
+      {/* Footer with Social Links */}
+      <footer className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex items-center gap-4">
+              <a 
+                href="https://www.instagram.com/arte.emcasaofc?igsh=MTFxbjV4cHIwbHIxbg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors group"
+              >
+                <div className="p-3 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
+                  <Instagram className="h-6 w-6" />
+                </div>
+                <span className="text-lg font-medium">Siga-nos no Instagram</span>
+              </a>
+            </div>
+            <p className="text-muted-foreground text-center">
+              © 2024 Arte em Casa. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

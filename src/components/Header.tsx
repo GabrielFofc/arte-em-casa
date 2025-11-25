@@ -28,8 +28,12 @@ const Header = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button variant="outline">Entrar</Button>
-            <Button>Começar Agora</Button>
+            <Link to="/auth">
+              <Button variant="outline">Entrar</Button>
+            </Link>
+            <Link to="/auth">
+              <Button>Começar Agora</Button>
+            </Link>
           </div>
         </nav>
       </div>
