@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
@@ -28,6 +29,7 @@ const Header = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <Link to="/auth">
               <Button variant="outline">Entrar</Button>
             </Link>
